@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini project</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+    <script src="https://kit.fontawesome.com/28b118125a.js"></script> 
+    <style>
+        #clock {
+            font-size: 65.25px;
+            width: 375px;
+            margin: 75px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            position: absolute;
+            left: 34%;
+            top: 65%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-5823bfbf-c3f7-459d-86a2-fb1e623059ca"></div>
+    <header>
+
+    <div class="wrapper">
+        
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+        </div>
+        
+        
+<ul class="nav-area">
+
+<li><a href="/game/game.html" target="_blank"><i class="fas fa-gamepad"></i>Games</a></li>
+<li><a href="/todo1 list/index.html" target="_blank"><i class="fas fa-clipboard-list"></i>To-do List</a></li>
+<li><a href="/study space/study.html" target="_blank"><i class="fas fa-book"></i>Study Space</a></li>
+<li><a href="/Sticky Notes/index.html" target="_blank"><i class="far fa-sticky-note"></i>Sticky Notes</a></li>
+</ul>
+</div>
+<i class="fas fa-dove" style="color: aliceblue;position: absolute;top: 25%;left: 16%;"></i>
+<h3 class="quotes"><pre> Write something worth reading or do something worth writing!
+                                            -Ben Franklin</pre></h3>
+<i class="fas fa-dove" style="color: aliceblue;position: absolute;top: 40%;right: 28%;"></i>
+
+</header>
+
+<div class="calci">
+    <a href="/calculator/calculator.html" target="_blank">
+        <img src="/images/calci 5.png" alt="calci">
+    </a>
+    <div id="clock">8:10:45</div>
+  
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+
+</div>
+
+</body>
+</html>

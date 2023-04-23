@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./study.css">
+    <title>Study space</title>
+</head>
+<body>
+    <div class="study">
+            <div class="video-fixed">
+                <video loop src="./video/birds.mp4" type="/video/mp4"></video>
+            </div>
+        <div class="time-select">
+         <button data-time="120">2 Minutes</button>
+         <button data-time="300">5 Minutes</button>
+         <button data-time="600">10 Minutes</button>
+         <button data-time="900">15 Minutes</button>
+         <button data-time="1800">30 Minutes</button>
+        </div>
+        <div class="video-play">
+            <audio class="song" src="./sounds/birds.mp3"></audio>
+            <img src="./svg/play.svg" alt="play" class="play">
+             <svg class="moving-outline" 
+                  width="453" 
+                  height="453" 
+                  viewBox="0 0 453 453"  
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" 
+                        cy="226.5" 
+                        r="216.5" 
+                        stroke="white" 
+                        stroke-width="20"/>
+             </svg>
+             <svg width="453" 
+                  height="453" 
+                  viewBox="0 0 453 453" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" 
+                            cy="226.5" 
+                            r="216.5" 
+                            stroke="#018EBA" 
+                            stroke-width="20"/>
+            </svg>
+            <h3 class="time-display">0:00</h3>
+        </div>
+        <div class="sound-pick">
+            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
+                <img  src="./svg/cloud.png" alt="rain">
+            </button>
+            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+                <img src="./svg/beach.jpg" alt="beach">
+            </button>
+            <button data-sound="./sounds/candle.mp3" data-video="./video/candle.mov">
+                <img src="./svg/candle.png" alt="candle">
+            </button>
+            <button data-sound="./sounds/falls.mp3" data-video="./video/falls.mov">
+                <img src="./svg/falls.jpg" alt="falls">
+            </button>
+            <button data-sound="./sounds/birds.mp3" data-video="./video/birds.mp4">
+                <img src="./svg/birds.png" alt="bird">
+            </button>
+        </div>
+    </div>
+    <script src="study.js"></script>
+</body>
+</html>
